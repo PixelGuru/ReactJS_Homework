@@ -1,8 +1,12 @@
 import React from "react";
-import Homework from "./components/Homework";
+import Lession1 from "./components/Lession1";
 
 function App() {
-  return <Homework />;
+  return (
+    <div>
+      <Lession1 />
+    </div>
+  );
 }
 
 export default App;

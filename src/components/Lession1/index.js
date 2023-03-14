@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Homework = () => {
+const Lession1 = () => {
   const [data, setData] = useState([
     {
       name: "Product A",
@@ -28,4 +28,4 @@ const Homework = () => {
   );
 };
 
-export default Homework;
+export default Lession1;
