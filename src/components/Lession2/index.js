@@ -5,8 +5,6 @@ const Lession2 = (props) => {
 
   const onSubmit = async () => {
     const values = await form.validateFields();
-    console.log(values);
-    // do somethings
     message.success("Login successful!");
   };
 
