@@ -17,7 +17,7 @@ const Tong = () => {
 
   return (
     <div>
-      <input type="text" value={value} onChange={onChange} />
+      <input value={value} onChange={onChange} />
       <p>Tổng các số vừa nhập là: {sum}</p>
     </div>
   );
