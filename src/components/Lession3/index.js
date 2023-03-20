@@ -9,8 +9,8 @@ const Tong = () => {
     setValue(value);
 
     let tong = 0;
-    for (let digit of value) {
-      tong += Number(digit);
+    for (let i of value) {
+      tong += Number(i);
     }
     setSum(tong);
   };
