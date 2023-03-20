@@ -4,8 +4,8 @@ const Tong = () => {
   const [value, setValue] = useState("");
   const [sum, setSum] = useState(0);
 
-  const onChange = (event) => {
-    const value = event.target.value;
+  const onChange = (e) => {
+    const value = e.target.value;
     setValue(value);
 
     let tong = 0;
@@ -18,7 +18,7 @@ const Tong = () => {
   return (
     <div>
       <input type="text" value={value} onChange={onChange} />
-      <p>Tong vừa nhập là: {sum}</p>
+      <p>Tổng các số vừa nhập là: {sum}</p>
     </div>
   );
 };
