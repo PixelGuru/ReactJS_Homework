@@ -10,7 +10,7 @@ const Tong = () => {
 
     let tong = 0;
     for (let i of value) {
-      tong += Number(i);
+      tong += parseInt(i);
     }
     setSum(tong);
   };

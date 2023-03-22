@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 const Lession4 = () => {
-  const [formData, setformData] = useState({ fistname: "", lastname: "" });
+  const [formData, setformData] = useState({
+    fistname: "",
+    lastname: "",
+  });
   const onChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
