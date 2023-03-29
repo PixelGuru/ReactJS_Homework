@@ -1,10 +1,10 @@
 import React from "react";
-import Lession5 from "./components/Lession5";
+import Lession6 from "./components/Lession6";
 import "antd/dist/reset.css";
 import "./App.css";
 
 function App() {
-  return <Lession5 />;
+  return <Lession6 />;
 }
 
 export default App;
