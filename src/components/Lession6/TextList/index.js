@@ -1,7 +1,7 @@
 import React from "react";
 import { Li } from "./styled";
 
-function textList({ num, text }) {
+function TextList({ num, text }) {
   const textList = [];
 
   for (let i = 0; i < num; i++) {
@@ -20,4 +20,4 @@ function textList({ num, text }) {
   );
 }
 
-export default textList;
+export default TextList;
