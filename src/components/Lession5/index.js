@@ -2,7 +2,7 @@ import { useState } from "react";
 import ListProducts from "./ListProducts";
 
 const Lession5 = () => {
-  const [user] = useState({
+  const [users] = useState({
     name: "Nguyen Van A",
     email: "nguyenvana@gmail.com",
   });
@@ -15,7 +15,7 @@ const Lession5 = () => {
   return (
     <div>
       <div>
-        <div>{`Khách hàng: ${user.name} có Email: ${user.email} `}</div>
+        <div>{`Khách hàng: ${users.name} có Email: ${users.email} `}</div>
 
         <ListProducts products={products} />
       </div>
