@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Li } from "./styled";
 
 function TextList({ num, text }) {
-  const textList = [];
+  const [textList, setTextList] = useState([]);
 
-  for (let i = 0; i < num; i++) {
-    textList.push(
-      <Li>
-        {i + 1}. {text}
-      </Li>
-    );
-  }
+  useEffect(() => {
+    if (num > 0 && text !== "") {
+      const listItem = [];
+      for (let i = 0; i < num; i++) {
+        listItem.push(
+          <Li>
+            {i + 1}. {text}
+          </Li>
+        );
+        setTextList(listItem);
+      }
+    } else {
+      setTextList([]);
+    }
+  }, [num, text]);
 
   return (
     <div>
