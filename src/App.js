@@ -1,10 +1,10 @@
 import React from "react";
-import Lession7 from "./components/Lession7";
+import UserManagement from "./components/UserManagement";
 import "antd/dist/reset.css";
 import "./App.css";
 
 function App() {
-  return <Lession7 />;
+  return <UserManagement />;
 }
 
 export default App;
